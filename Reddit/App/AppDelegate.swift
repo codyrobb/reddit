@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// The main window.
     var window: UIWindow?
 
-    /// The main app coordinator. Use this to handle deep-linking, state restoration, etc.
-    var appCoordinator: AppCoordinator?
+    /// The posts coordinator.
+    var postsCoordinator: PostsCoordinator?
 
     // MARK: -
     // MARK: Lifecycle
@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        appCoordinator = AppCoordinator(window: window)
-        appCoordinator?.launch()
+        postsCoordinator = PostsCoordinator(window: window)
+        postsCoordinator?.launch()
         return true
     }
 

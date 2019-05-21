@@ -32,7 +32,6 @@
 		428DFBDF2293905100B3E43C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBDE2293905100B3E43C /* Endpoint.swift */; };
 		428DFBE3229392F900B3E43C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 428DFBE2229392F900B3E43C /* Podfile */; };
 		428DFBE52293983F00B3E43C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBE42293983F00B3E43C /* NetworkError.swift */; };
-		428DFBE92293AADF00B3E43C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBE82293AADF00B3E43C /* AppCoordinator.swift */; };
 		428DFBF82293C38700B3E43C /* PostItemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBF72293C38700B3E43C /* PostItemState.swift */; };
 		428DFBFA2293C3BB00B3E43C /* PostItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBF92293C3BB00B3E43C /* PostItemViewModel.swift */; };
 		428DFBFC2293C3C600B3E43C /* PostItemViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DFBFB2293C3C600B3E43C /* PostItemViewModelProtocol.swift */; };
@@ -82,9 +81,8 @@
 		428DFBD92293623000B3E43C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		428DFBDC22938CB800B3E43C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		428DFBDE2293905100B3E43C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		428DFBE2229392F900B3E43C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		428DFBE2229392F900B3E43C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		428DFBE42293983F00B3E43C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		428DFBE82293AADF00B3E43C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		428DFBF72293C38700B3E43C /* PostItemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemState.swift; sourceTree = "<group>"; };
 		428DFBF92293C3BB00B3E43C /* PostItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewModel.swift; sourceTree = "<group>"; };
 		428DFBFB2293C3C600B3E43C /* PostItemViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				428DFB792293470D00B3E43C /* AppDelegate.swift */,
-				428DFBE82293AADF00B3E43C /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -567,7 +564,6 @@
 				428DFBC522935A3900B3E43C /* Store.swift in Sources */,
 				428DFBC12293501000B3E43C /* PostsViewModelDelegate.swift in Sources */,
 				428DFBBD22934FFE00B3E43C /* PostsStoreCommands.swift in Sources */,
-				428DFBE92293AADF00B3E43C /* AppCoordinator.swift in Sources */,
 				428DFBB522934FCA00B3E43C /* PostsCoordinator.swift in Sources */,
 				428DFBB022934D3D00B3E43C /* PostsViewModel.swift in Sources */,
 				428DFBD322935C7700B3E43C /* NetworkRequestState.swift in Sources */,
