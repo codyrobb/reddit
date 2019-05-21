@@ -82,7 +82,7 @@
 		428DFBD92293623000B3E43C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		428DFBDC22938CB800B3E43C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		428DFBDE2293905100B3E43C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		428DFBE2229392F900B3E43C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = Reddit/Podfile; sourceTree = SOURCE_ROOT; };
+		428DFBE2229392F900B3E43C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		428DFBE42293983F00B3E43C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		428DFBE82293AADF00B3E43C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		428DFBF72293C38700B3E43C /* PostItemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemState.swift; sourceTree = "<group>"; };
