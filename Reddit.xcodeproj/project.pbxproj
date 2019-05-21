@@ -189,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				428DFBF22293C34C00B3E43C /* Posts */,
-				428DFBF32293C35000B3E43C /* Post */,
+				428DFBF32293C35000B3E43C /* PostCell */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -326,14 +326,14 @@
 			path = Posts;
 			sourceTree = "<group>";
 		};
-		428DFBF32293C35000B3E43C /* Post */ = {
+		428DFBF32293C35000B3E43C /* PostCell */ = {
 			isa = PBXGroup;
 			children = (
 				428DFBF42293C35B00B3E43C /* State */,
 				428DFBF62293C36400B3E43C /* ViewModel */,
 				428DFBF52293C36000B3E43C /* View */,
 			);
-			path = Post;
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		428DFBF42293C35B00B3E43C /* State */ = {
