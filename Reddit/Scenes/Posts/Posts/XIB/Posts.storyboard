@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="POy-f4-Byq">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reddit-->
+        <scene sceneID="Kxv-MQ-6mo">
+            <objects>
+                <tableViewController id="VFK-4F-Twa" customClass="PostsViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="34Q-eg-bT9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="69" id="SiZ-x0-w3N" customClass="PostCell" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="69"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SiZ-x0-w3N" id="ldG-4x-wxr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="27D-AJ-h8V">
+                                            <rect key="frame" x="20" y="11" width="374" height="47"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="1000" text="This is an example title of a post." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-KU-jd9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260.5" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="/r/spacex" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-Cq-DnS">
+                                                    <rect key="frame" x="0.0" y="29" width="63" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="27D-AJ-h8V" firstAttribute="leading" secondItem="ldG-4x-wxr" secondAttribute="leadingMargin" id="HgT-ma-jfA"/>
+                                        <constraint firstItem="27D-AJ-h8V" firstAttribute="top" secondItem="ldG-4x-wxr" secondAttribute="topMargin" id="QAb-OY-Aqe"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="27D-AJ-h8V" secondAttribute="bottom" id="cE2-29-x7X"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="27D-AJ-h8V" secondAttribute="trailing" id="d4y-go-tBK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subredditLabel" destination="S5s-Cq-DnS" id="JSL-lg-bfU"/>
+                                    <outlet property="titleLabel" destination="L4Y-KU-jd9" id="KMG-uY-i3J"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VFK-4F-Twa" id="OV1-jE-IZM"/>
+                            <outlet property="delegate" destination="VFK-4F-Twa" id="g1G-sZ-F0U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Reddit" id="QxO-qO-kph">
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="done" id="WoK-pD-9hy">
+                            <color key="tintColor" red="0.2470588235" green="0.68235294120000001" blue="0.1647058824" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="changeCategory:" destination="VFK-4F-Twa" id="WKp-Ju-R2c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="switcherButton" destination="WoK-pD-9hy" id="r4e-ik-ntO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="550-57-fwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XMJ-wW-FNO">
+            <objects>
+                <navigationController id="POy-f4-Byq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SeF-UE-D3b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VFK-4F-Twa" kind="relationship" relationship="rootViewController" id="YHl-nr-RtJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jll-GU-z0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="58"/>
+        </scene>
+    </scenes>
+</document>
